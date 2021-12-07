@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="../Css/main.css" />
   </head>
   <body>
-    <section id="Projectlist">
-      <div class="projectlist d-flex">
+    <section id="ProjectForm">
+      <div class="ProjectForm d-flex">
         <div class="sidebar d-flex flex-column align-items-center">
           <div class="logo">
             <img src="../image/Group 23.png" alt="" />
@@ -184,66 +184,61 @@
             </div>
           </div>
           <div class="maincontentbody">
-            <div class="table">
-              <table class="table table-striped table-hover">
-                <thead>
-                  <td>Logo</td>
-                  <td>Project Name</td>
-                  <td>Severity</td>
-                  <td>Reward Range</td>
-                  <td>Actions</td>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>logo</td>
-                    <td>logo</td>
-                    <td>logo</td>
-                    <td>logo</td>
-                    <td>
-                      <div
-                        class="icon d-flex align-items-center"
-                        style="gap: 10px"
-                      >
-                        <i class="far fa-eye"></i>
-                        <i class="far fa-edit"></i>
-                        <i class="far fa-trash-alt"></i>
+            <div class="form">
+              <div class="form-group projectDetail">
+                <h4>Project Details</h4>
+                <div class="gy-5 p-4 mt-6">
+                  <div class="col-lg-12">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <h5>Logo</h5>
+                        <input type="file" id="" />
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>logo</td>
-                    <td>logo</td>
-                    <td>logo</td>
-                    <td>logo</td>
-                    <td>
-                      <div
-                        class="icon d-flex align-items-center"
-                        style="gap: 10px"
-                      >
-                        <i class="far fa-eye"></i>
-                        <i class="far fa-edit"></i>
-                        <i class="far fa-trash-alt"></i>
+                      <div class="col-lg-4">
+                        <h5>Project Name</h5>
+                        <input type="text" id="" />
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>logo</td>
-                    <td>logo</td>
-                    <td>logo</td>
-                    <td>logo</td>
-                    <td>
-                      <div
-                        class="icon d-flex align-items-center"
-                        style="gap: 10px"
-                      >
-                        <i class="far fa-eye"></i>
-                        <i class="far fa-edit"></i>
-                        <i class="far fa-trash-alt"></i>
+                      <div class="col-lg-4">
+                        <h5>Launced Date</h5>
+                        <input type="date" id="" style="color: #adadad" />
                       </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <h5>Project Short Description</h5>
+                    <textarea name="" id="" rows="5"></textarea>
+                  </div>
+                  <div class="col-lg-12">
+                    <h5>Project Description</h5>
+                    <textarea name="" id="" rows="5"></textarea>
+                  </div>
+                  <div class="col-lg-12">
+                    <h5>Bounty Policies</h5>
+                    <textarea name="" id="" rows="5"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group info">
+                <h4>Information</h4>
+                <textarea name="" id="" rows="5"></textarea>
+              </div>
+              <div class="form-group Policy">
+                <h4>Disclosure Policies</h4>
+                <textarea name="" id="" rows="5"></textarea>
+              </div>
+              <div class="form-group Description">
+                <h4>Description</h4>
+                <textarea name="" id="" rows="5"></textarea>
+              </div>
+
+              <div
+                class="form-group d-flex button justify-content-end"
+                style="gap: 20px"
+              >
+                <button class="btn draft">Save as Draft</button>
+                <button class="btn Preview">Preview</button>
+                <button class="btn Save">Save</button>
+              </div>
             </div>
           </div>
         </div>
@@ -272,6 +267,207 @@
               <div class="icons d-flex align-items-center" style="gap: 10px">
                 <i class="far fa-bell"></i>
                 <i class="far fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+          <div class="rightbody">
+            <div class="target mb-5">
+              <h4 class="mb-3">Target</h4>
+              <select name="" id="">
+                <option value="">Type</option>
+                <option value="">Gypo</option>
+                <option value="">Sad</option>
+              </select>
+            </div>
+            <div class="rewards mb-5">
+              <h4 class="mb-3">Rewards</h4>
+
+              <div class="rewardscontainer p-3">
+                <div
+                  class="
+                    rewardsHeader
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                    mb-3
+                  "
+                >
+                  <h6>Serevity</h6>
+                  <h6>Rewards-Range</h6>
+                </div>
+                <div class="carbody d-flex flex-column" style="gap: 10px">
+                  <div
+                    class="
+                      reward
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="Critical box">Critical</div>
+                    <div
+                      class="rewardrange d-flex align-items-center"
+                      style="width: 50%"
+                    >
+                      <input
+                        type="text"
+                        class="Critical"
+                        placeholder="$"
+                        style="width: 50%"
+                      />
+                      -
+                      <input
+                        type="text"
+                        class="Critical"
+                        placeholder="$"
+                        style="width: 50%"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      reward
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="High box">High</div>
+                    <div
+                      class="rewardrange d-flex align-items-center"
+                      style="width: 50%"
+                    >
+                      <input
+                        type="text"
+                        class="High"
+                        placeholder="$"
+                        style="width: 50%"
+                      />
+                      -
+                      <input
+                        type="text"
+                        class="High"
+                        placeholder="$"
+                        style="width: 50%"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      reward
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="Moderate box">Moderate</div>
+                    <div
+                      class="rewardrange d-flex align-items-center"
+                      style="width: 50%"
+                    >
+                      <input
+                        type="text"
+                        class="Moderate"
+                        placeholder="$"
+                        style="width: 50%"
+                      />
+                      -
+                      <input
+                        type="text"
+                        class="Moderate"
+                        placeholder="$"
+                        style="width: 50%"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      reward
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="Low box">Low</div>
+                    <div
+                      class="rewardrange d-flex align-items-center"
+                      style="width: 50%"
+                    >
+                      <input
+                        type="text"
+                        class="Low"
+                        placeholder="$"
+                        style="width: 50%"
+                      />
+                      -
+                      <input
+                        type="text"
+                        class="Low"
+                        placeholder="$"
+                        style="width: 50%"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Hackerform mb-5">
+              <h4 class="mb-3">Invite Hacker/ User</h4>
+              <div class="Hackercontainer card p-3">
+                <div class="user d-flex">
+                  <select name="" id="">
+                    <option value="">sad</option>
+                    <option value="">sad</option>
+                    <option value="">sad</option>
+                    <option value="">sad</option>
+                    <option value="">sad</option>
+                  </select>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+            <div class="Hackerlist">
+              <h4 class="mb-3">Invite Hacker list</h4>
+              <div class="Hackercontainer card p-3 mb-4">
+                <div class="userlist">
+                  <div class="list">
+                    <div class="icon"></div>
+                    <p>Zaya Silwal</p>
+                    <div class="delete"><i class="far fa-trash-alt"></i></div>
+                  </div>
+                  <div class="list">
+                    <div class="icon"></div>
+                    <p>Zaya Silwal</p>
+                    <div class="delete"><i class="far fa-trash-alt"></i></div>
+                  </div>
+                  <div class="list">
+                    <div class="icon"></div>
+                    <p>Zaya Silwal</p>
+                    <div class="delete"><i class="far fa-trash-alt"></i></div>
+                  </div>
+                  <div class="list">
+                    <div class="icon"></div>
+                    <p>Zaya Silwal</p>
+                    <div class="delete"><i class="far fa-trash-alt"></i></div>
+                  </div>
+                  <div class="list">
+                    <div class="icon"></div>
+                    <p>Zaya Silwal</p>
+                    <div class="delete"><i class="far fa-trash-alt"></i></div>
+                  </div>
+                  <div class="list">
+                    <div class="icon"></div>
+                    <p>Zaya Silwal</p>
+                    <div class="delete"><i class="far fa-trash-alt"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="button mb-4 d-flex justify-content-end"
+                style="gap: 10px"
+              >
+                <button class="btn cancel">cancel</button>
+                <button class="btn Invite">Invite</button>
               </div>
             </div>
           </div>
