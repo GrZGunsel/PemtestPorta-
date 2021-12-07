@@ -735,6 +735,69 @@ Main dashboard finished */
   margin-left: auto;
   color: #f8896b;
 }
+
+/* 
+project form ends */
+
+/* projectlistview :start */
+.maincontent .maincontentbody > .table {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
+    4px 36px 46px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.maincontent .maincontentbody .table tr:nth-child(even) {
+  background: #fff6f8;
+}
+.maincontent .maincontentbody .search {
+  box-shadow: 4px 36px 46px rgba(0, 0, 0, 0.05);
+  padding: 20px 20px;
+  border-radius: 6px;
+  width: 20%;
+}
+
+.maincontent .maincontentbody .search input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.maincontent .maincontentbody .table tr td,
+.maincontent .maincontentbody .table tr th {
+  border: none !important;
+  vertical-align: middle;
+  height: 100%;
+  padding: 20px;
+}
+
+.maincontent .maincontentbody .table tr td .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.maincontent .maincontentbody .table tr td:nth-child(3) {
+  color: #bf2900;
+}
+
+.maincontent .maincontentbody .table tr td:nth-child(4) {
+  color: #388f1a;
+}
+
+.maincontent .maincontentbody .table tr td .icon .fa-eye {
+  color: #388f1a;
+}
+.maincontent .maincontentbody .table tr td .icon .fa-edit {
+  color: #6b51df;
+}
+.maincontent .maincontentbody .table tr td .icon .fa-trash-alt {
+  color: #eb1616;
+}
+
+.maincontent .maincontentbody .table tr td .image {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+}
 @media all and (max-width: 1366px) {
   p {
     font-size: 12px !important;
