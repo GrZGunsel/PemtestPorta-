@@ -108,41 +108,39 @@ section > div > .active {
 .rightcontent .rightbody {
   padding: 0 2rem;
 }
-
-.rightcontent .profile {
+.profile {
   position: sticky;
   top: 0;
   z-index: 9999;
   background: white;
 }
-.rightcontent .profile .leftcontainer .image {
+.profile .leftcontainer .image {
   height: 69px;
   width: 69px;
   border-radius: 50%;
   overflow: hidden;
 }
-.rightcontent .profile .leftcontainer .image img {
+.profile .leftcontainer .image img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
-.rightcontent .profile {
+.profile {
   padding: 2rem;
   margin-bottom: 2rem;
 }
-
-.rightcontent .profile .rightcontainer {
+.profile .rightcontainer {
   width: 100%;
 }
-.rightcontent .profile .rightcontainer .nameDescription h4 {
+.profile .rightcontainer .nameDescription h4 {
   font-size: 18px;
   font-weight: 500;
 }
-.rightcontent .profile .rightcontainer .nameDescription p {
+.profile .rightcontainer .nameDescription p {
   font-size: 13px;
   color: #a1a1a1;
 }
-.rightcontent .profile .rightcontainer .icons {
+.profile .rightcontainer .icons {
   font-size: 20px;
   color: #5b5b5b;
 }
@@ -606,9 +604,10 @@ Main dashboard finished */
     4px 36px 46px rgba(0, 0, 0, 0.05);
   width: 100%;
   outline: none;
-  border-radius: 12px;
+  border-radius: 6px;
   border: none;
-  padding: 15px 10px;
+  font-size: 14px;
+  padding: 15px 15px;
 }
 
 .ProjectForm .maincontent .maincontentbody button {
@@ -740,10 +739,26 @@ Main dashboard finished */
 project form ends */
 
 /* projectlistview :start */
+
+.projectlist .maincontent,
+.MasterDataEntry .maincontent {
+  width: calc(100vw - 10vh) !important;
+}
+.projectlist .maincontent .profile,
+.MasterDataEntry .maincontent .profile {
+  margin: 0;
+  padding: 0;
+}
+
+.projectlist .maincontent .profile .rightcontainer,
+.MasterDataEntry .maincontent .profile .rightcontainer {
+  gap: 20px;
+}
 .maincontent .maincontentbody > .table {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
     4px 36px 46px rgba(0, 0, 0, 0.05);
   padding: 20px;
+  border-radius: 6px;
 }
 
 .maincontent .maincontentbody .table tr:nth-child(even) {
@@ -760,6 +775,8 @@ project form ends */
   border: none;
   background: transparent;
   outline: none;
+  width: 100%;
+  font-size: 14px;
 }
 
 .maincontent .maincontentbody .table tr td,
@@ -797,6 +814,67 @@ project form ends */
   height: 40px;
   width: 40px;
   overflow: hidden;
+}
+
+/* 
+projectlist :end */
+
+/* 
+.MasterDataEntry :start */
+.MasterDataEntry .maincontent .maincontentbody > h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.MasterDataEntry .maincontent .card {
+  border: none;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
+    4px 36px 46px rgba(0, 0, 0, 0.05);
+
+  border-radius: 6px;
+}
+.MasterDataEntry .maincontent .card .nav-tabs {
+  border: none;
+}
+.MasterDataEntry .maincontent .card ul li button {
+  width: 100%;
+  padding: 20px;
+
+  color: #252525;
+  border: none;
+}
+.MasterDataEntry .maincontent .card ul li button p {
+  font-size: 16px !important;
+  font-weight: 500;
+}
+.MasterDataEntry .maincontent .card ul li:nth-child(odd) {
+  background: #fff6f8;
+}
+.MasterDataEntry .maincontent .card ul li button.active {
+  background-color: #c4b9f2;
+}
+
+.MasterDataEntry .maincontent .card .form input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 15px 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
+    4px 36px 46px rgba(0, 0, 0, 0.05);
+}
+
+.MasterDataEntry .maincontent .card .form button {
+  padding: 10px 15px;
+  background: #623ce7;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0px 12px 24px rgba(98, 60, 231, 0.5);
+  border-radius: 0px 7px 7px 7px;
+  font-size: 14px;
+}
+.MasterDataEntry .maincontent .maincontentheader {
+  margin-bottom: 0;
 }
 @media all and (max-width: 1366px) {
   p {
