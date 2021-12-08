@@ -630,15 +630,15 @@ Main dashboard finished */
   background: #623ce7;
 }
 
-.ProjectForm .rightcontent .target {
+.ProjectForm .target {
   margin-bottom: 3rem;
 }
 
-.ProjectForm .rightcontent h4 {
+.ProjectForm h4 {
   font-size: 18px;
   color: #5b5858;
 }
-.ProjectForm .rightcontent .target select {
+.ProjectForm .target select {
   background: #ffffff;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
     4px 36px 46px rgba(0, 0, 0, 0.05);
@@ -648,31 +648,34 @@ Main dashboard finished */
   border: none;
   padding: 15px 10px;
 }
-
-.ProjectForm .rightcontent .rewardscontainer {
+.ProjectForm .target button {
+  background: #623ce7;
+}
+.ProjectForm .rewardscontainer {
   background: #ffffff;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
     4px 36px 46px rgba(0, 0, 0, 0.05);
 }
-.ProjectForm .rightcontent .rewardscontainer .box {
+.ProjectForm .rewardscontainer .box {
   padding: 5px 15px;
-  width: 100px;
+  text-align: center;
+  width: 145.83px;
   border-radius: 7px 0px 7px 7px;
   color: #ffffff;
 }
-.ProjectForm .rightcontent .rewardscontainer .box.Critical {
+.ProjectForm .rewardscontainer .box.Critical {
   background-color: #f66262;
 }
-.ProjectForm .rightcontent .rewardscontainer .box.High {
+.ProjectForm .rewardscontainer .box.High {
   background-color: #f78888;
 }
-.ProjectForm .rightcontent .rewardscontainer .box.Moderate {
+.ProjectForm .rewardscontainer .box.Moderate {
   background-color: #f5ad40;
 }
-.ProjectForm .rightcontent .rewardscontainer .box.Low {
+.ProjectForm .rewardscontainer .box.Low {
   background-color: #47bb60;
 }
-.ProjectForm .rightcontent .rewardscontainer .rewardrange input {
+.ProjectForm .rewardscontainer .rewardrange input {
   outline: none;
   font-size: 12px;
   padding: 5px;
@@ -680,25 +683,25 @@ Main dashboard finished */
   height: 30px;
   border-radius: 7px 0px 7px 7px;
 }
-.ProjectForm .rightcontent .rewardscontainer .rewardrange input.Critical {
+.ProjectForm .rewardscontainer .rewardrange input.Critical {
   border-color: #f66262;
 }
-.ProjectForm .rightcontent .rewardscontainer .rewardrange input.High {
+.ProjectForm .rewardscontainer .rewardrange input.High {
   border-color: #f78888;
 }
-.ProjectForm .rightcontent .rewardscontainer .rewardrange input.Moderate {
+.ProjectForm .rewardscontainer .rewardrange input.Moderate {
   border-color: #f5ad40;
 }
-.ProjectForm .rightcontent .rewardscontainer .rewardrange input.Low {
+.ProjectForm .rewardscontainer .rewardrange input.Low {
   border-color: #47bb60;
 }
 
-.ProjectForm .rightcontent .Hackercontainer {
+.ProjectForm .Hackercontainer {
   background: #ffffff;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
     4px 36px 46px rgba(0, 0, 0, 0.05);
 }
-.ProjectForm .rightcontent .Hackerlist .button button {
+.ProjectForm .Hackerlist .button button {
   padding: 5px 15px;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
     4px 36px 46px rgba(0, 0, 0, 0.05);
