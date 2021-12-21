@@ -23,7 +23,7 @@
   </head>
   <body>
     <section id="MasterDataEntry">
-      <div class="MasterDataEntry d-flex">
+      <div class="d-flex">
         <div class="sidebar d-flex flex-column align-items-center">
           <div class="logo">
             <img src="../image/Group 23.png" alt="" />
@@ -161,7 +161,7 @@
             </div>
           </div>
         </div>
-        <div class="maincontent">
+        <div class="maincontent MasterDataEntry">
           <div class="maincontentheader d-flex justify-content-between">
             <div class="d-flex align-items-center" style="gap: 20px">
               <div class="hamrburgericon" onclick="extendedsidebar() ">
@@ -169,18 +169,6 @@
               </div>
             </div>
             <div class="options d-flex align-items-center">
-              <div class="security d-flex align-items-center">
-                <div class="icon">
-                  <img src="../Icons/ic_baseline-security.png" alt="" />
-                </div>
-                <p>Security Center</p>
-              </div>
-              <div class="setting d-flex align-items-center">
-                <div class="icon">
-                  <img src="../Icons/ant-design_setting-outlined.png" alt="" />
-                </div>
-                <p>Setting</p>
-              </div>
               <div class="profile d-flex align-items-center" style="gap: 10px">
                 <div class="leftcontainer">
                   <div class="image">
@@ -200,7 +188,6 @@
                 >
                   <div class="nameDescription">
                     <h4>Lorem Ispum</h4>
-                    <p>Joined a month ago</p>
                   </div>
                   <div
                     class="icons d-flex align-items-center"
@@ -214,8 +201,8 @@
           </div>
           <div class="maincontentbody">
             <h4>Master Data</h4>
-            <div class="card">
-              <div class="row" style="padding: 0 10px; width: 100%">
+            <div class="card" style="overflow: hidden">
+              <div class="row" style="padding: 0 10px">
                 <div class="col-lg-2 card" style="padding: 0">
                   <ul
                     class="nav nav-tabs flex-column"
@@ -234,7 +221,7 @@
                         style="gap: 5px"
                         id="Serevity-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#Severity"
+                        data-bs-target="#Serverity"
                         type="button"
                         role="tab"
                         aria-controls="home"

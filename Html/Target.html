@@ -23,6 +23,62 @@
   </head>
   <body>
     <section>
+      <div class="modelcontainer">
+        <div class="model">
+          <div
+            class="
+              modelheader
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <h3>Add project Target</h3>
+            <button class="btn dangerbtn" onclick="removemodel()">x</button>
+          </div>
+          <div class="modelbody">
+            <form action="">
+              <div class="col-lg-12">
+                <div class="form-group d-flex flex-column">
+                  <label for="Website">Types</label>
+                  <select name="" id="Website">
+                    <option value="">sad</option>
+                    <option value="">sad</option>
+                    <option value="">sad</option>
+                    <option value="">sad</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label for="">Target Url</label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="model-footer">
+            <div
+              class="buttons d-flex align-items-center justify-content-end"
+              style="gap: 10px; width: 100%"
+            >
+              <div class="button">
+                <a href="">
+                  <button class="btn primarybtn add">Save</button>
+                </a>
+              </div>
+
+              <div class="button">
+                <a href="">
+                  <button class="btn secondarybtn" onclick="removemodel()">
+                    Cancel
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="d-flex">
         <div class="sidebar d-flex flex-column align-items-center">
           <div class="logo">
@@ -232,95 +288,65 @@
                 </div>
               </div>
               <div class="col-lg-10">
-                <h4>Project Details</h4>
-                <div class="card projectDetail">
-                  <form action="" style="width: 100%">
-                    <div class="row gy-4">
-                      <div class="col-lg-6">
-                        <div class="form-group">
-                          <label for="">Upload Logo</label>
-                          <input type="file" class="form-control" />
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="form-group">
-                          <label for="">Project Name</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="form-group">
-                          <label for="">Tagline</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="form-group">
-                          <label for="">Project Budgets</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                      </div>
-
-                      <div class="col-lg-12">
-                        <label>Timeline</label>
-                        <div class="row gy-4">
-                          <div class="col-lg-6">
-                            <div class="form-group">
-                              <label for="">Start Date</label>
-                              <input type="date" class="form-control" />
-                            </div>
-                          </div>
-                          <div class="col-lg-6">
-                            <div class="form-group">
-                              <label for="">End Date</label>
-                              <input type="date" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <label for="">Objectives </label>
-                          <textarea
-                            type="date"
-                            rows="5"
-                            class="form-control"
-                          ></textarea>
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <label for="">Policies </label>
-                          <textarea
-                            type="date"
-                            rows="5"
-                            class="form-control"
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-
+                <h4>Set Target</h4>
                 <div
-                  class="
-                    buttons
-                    d-flex
-                    align-items-center
-                    justify-content-end
-                    p-4
-                  "
-                  style="gap: 10px"
+                  class="card"
+                  style="flex-direction: column; padding: 20px 40px"
                 >
-                  <div class="button">
-                    <a href="">
-                      <button class="btn secondarybtn">Back</button>
-                    </a>
+                  <div
+                    class="addbtn d-flex justify-content-end"
+                    style="width: 100%"
+                  >
+                    <button class="btn primarybtn" onclick="model()">+</button>
                   </div>
-                  <div class="button">
-                    <a href="">
-                      <button class="btn primarybtn">Continue</button>
-                    </a>
+
+                  <table class="table table-hovered">
+                    <tr>
+                      <td>SN</td>
+                      <td>Types</td>
+                      <td>Target Url</td>
+                      <td>Action</td>
+                    </tr>
+                    <tr>
+                      <td>#</td>
+                      <td>No target Available</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>SN</td>
+                      <td>Types</td>
+                      <td>Target Url</td>
+                      <td>
+                        <div
+                          class="icon d-flex align-items-center"
+                          style="gap: 10px"
+                        >
+                          <i class="far fa-edit"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <div
+                    class="
+                      buttons
+                      d-flex
+                      align-items-center
+                      justify-content-end
+                    "
+                    style="gap: 10px; width: 100%"
+                  >
+                    <div class="button">
+                      <a href="">
+                        <button class="btn secondarybtn">Back</button>
+                      </a>
+                    </div>
+                    <div class="button">
+                      <a href="">
+                        <button class="btn primarybtn">Continue</button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -330,11 +356,6 @@
       </div>
     </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -342,6 +363,16 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      function model() {
+        var modelcontainer = document.querySelector(".modelcontainer");
+        modelcontainer.style.display = "flex";
+      }
+
+      function removemodel() {
+        var modelcontainer = document.querySelector(".modelcontainer");
+        modelcontainer.style.display = "none";
+      }
+
       function extendedsidebar() {
         var text = document.querySelector(".link");
         var sidebar = document.querySelector(".sidebar");
@@ -349,32 +380,6 @@
         text.classList.toggle("active");
         console.log(text);
       }
-      $(function () {
-        $(".progress").each(function () {
-          var value = $(this).attr("data-value");
-          var left = $(this).find(".progress-left .progress-bar");
-          var right = $(this).find(".progress-right .progress-bar");
-
-          if (value > 0) {
-            if (value <= 50) {
-              right.css(
-                "transform",
-                "rotate(" + percentageToDegrees(value) + "deg)"
-              );
-            } else {
-              right.css("transform", "rotate(180deg)");
-              left.css(
-                "transform",
-                "rotate(" + percentageToDegrees(value - 50) + "deg)"
-              );
-            }
-          }
-        });
-
-        function percentageToDegrees(percentage) {
-          return (percentage / 100) * 360;
-        }
-      });
     </script>
   </body>
 </html>
