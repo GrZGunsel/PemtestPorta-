@@ -934,7 +934,7 @@ Main dashboard finished */
 .modelcontainer,
 .modelcontainer1 {
   display: none;
-  background-color: rgba(0, 0, 0, 0.486);
+  background: rgba(35, 34, 34, 0.5);
   position: absolute;
   z-index: 9999999;
   align-items: center;
@@ -942,6 +942,29 @@ Main dashboard finished */
   height: 100%;
   width: 100%;
 }
+
+.ProjectForm .maincontentbody .projectDetail .submit .logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.ProjectForm .maincontentbody .projectDetail .submit h5 {
+  color: #5b5858;
+}
+.ProjectForm .maincontentbody .projectDetail .submit h6 {
+  color: #5b5858;
+}
+.ProjectForm .maincontentbody .projectDetail .submit textarea {
+  outline: none;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1.5px solid rgba(91, 88, 88, 0.5);
+  color: #5b5858;
+  border-radius: 12px;
+}
+
 .model,
 .model1 {
   background: #ffffff;
