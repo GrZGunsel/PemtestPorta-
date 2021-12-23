@@ -23,49 +23,6 @@
   </head>
   <body>
     <section>
-      <div class="modelcontainer1">
-        <div class="model1">
-          <div
-            class="
-              modelheader1
-              d-flex
-              justify-content-between
-              align-items-center
-            "
-          >
-            <h3>Delete Target</h3>
-            <button class="btn dangerbtn" onclick="removedeletecontainer()">
-              x
-            </button>
-          </div>
-          <div class="modelbody">
-            <h6 class="mb-4">Are you sure you want to delete this target?</h6>
-          </div>
-          <div class="model-footer">
-            <div
-              class="buttons d-flex align-items-center justify-content-end"
-              style="gap: 10px; width: 100%"
-            >
-              <div class="button">
-                <a href="">
-                  <button class="btn primarybtn add">Confirm</button>
-                </a>
-              </div>
-
-              <div class="button">
-                <a href="">
-                  <button
-                    class="btn secondarybtn"
-                    onclick="removedeletecontainer()"
-                  >
-                    Cancel
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="modelcontainer">
         <div class="model">
           <div
@@ -79,7 +36,6 @@
             <h3>Add project Target</h3>
             <button class="btn dangerbtn" onclick="removemodel()">x</button>
           </div>
-
           <div class="modelbody">
             <form action="">
               <div class="col-lg-12">
@@ -300,143 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="maincontentbody">
-            <div class="row">
-              <div class="col-lg-2">
-                <h4>Create a Project</h4>
-                <div class="card">
-                  <div class="WizardForm">
-                    <div class="step">
-                      <div class="circle active"></div>
-                      <div class="line"></div>
-                    </div>
-                    <div class="step">
-                      <div class="circle"></div>
-                      <div class="line"></div>
-                    </div>
-                    <div class="step">
-                      <div class="circle"></div>
-                    </div>
-                  </div>
-                  <div class="links">
-                    <div class="link">
-                      <p class="active">Detail</p>
-                    </div>
-                    <div class="link">
-                      <p>Detail</p>
-                    </div>
-                    <div class="link">
-                      <p>Detail</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10">
-                <h4>Set Target</h4>
-                <div
-                  class="card"
-                  style="flex-direction: column; padding: 20px 40px"
-                >
-                  <div
-                    class="addbtn d-flex justify-content-end"
-                    style="width: 100%"
-                  >
-                    <button class="btn primarybtn" onclick="model()">+</button>
-                  </div>
-                  <div class="tablewrapper">
-                    <table class="table table-hovered">
-                      <tr>
-                        <td>SN</td>
-                        <td>Types</td>
-                        <td>Target Url</td>
-                        <td>Action</td>
-                      </tr>
-                      <tr>
-                        <td>#</td>
-                        <td>No target Available</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>#</td>
-                        <td>No target Available</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>#</td>
-                        <td>No target Available</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>#</td>
-                        <td>No target Available</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>#</td>
-                        <td>No target Available</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>#</td>
-                        <td>No target Available</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>#</td>
-                        <td>No target Available</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-
-                      <tr>
-                        <td>SN</td>
-                        <td>Types</td>
-                        <td>Target Url</td>
-                        <td>
-                          <div
-                            class="icon d-flex align-items-center"
-                            style="gap: 10px"
-                          >
-                            <i class="far fa-edit"></i>
-                            <i
-                              class="far fa-trash-alt"
-                              onclick="deletecontainer()"
-                            ></i>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div
-                    class="
-                      buttons
-                      d-flex
-                      align-items-center
-                      justify-content-end
-                    "
-                    style="gap: 10px; width: 100%"
-                  >
-                    <div class="button">
-                      <a href="">
-                        <button class="btn secondarybtn">Back</button>
-                      </a>
-                    </div>
-                    <div class="button">
-                      <a href="">
-                        <button class="btn primarybtn">Continue</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="maincontentbody"></div>
         </div>
       </div>
     </section>
@@ -453,14 +273,6 @@
         modelcontainer.style.display = "flex";
       }
 
-      function deletecontainer() {
-        var modelcontainer1 = document.querySelector(".modelcontainer1");
-        modelcontainer1.style.display = "flex";
-      }
-      function removedeletecontainer() {
-        var modelcontainer1 = document.querySelector(".modelcontainer1");
-        modelcontainer1.style.display = "none";
-      }
       function removemodel() {
         var modelcontainer = document.querySelector(".modelcontainer");
         modelcontainer.style.display = "none";
