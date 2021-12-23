@@ -46,7 +46,7 @@ section > div > .active {
 }
 
 .maincontent {
-  width: calc(100vw - 55vh);
+  width: 100%;
 }
 .sidebar .logo {
   margin-bottom: 5rem;
@@ -128,10 +128,7 @@ section > div > .active {
   height: 100%;
   width: 100%;
 }
-.profile {
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
+
 .profile .rightcontainer {
   width: 100%;
 }
@@ -205,6 +202,11 @@ section > div > .active {
 
 .homepage .maincontent .maincontentheader {
   margin-bottom: 4rem;
+}
+
+.homepage .profile {
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 .homepage .maincontent .createTask button {
@@ -609,213 +611,7 @@ Main dashboard finished */
 
 /* ProjectTable ends */
 
-/* project form */
-/* 
-.ProjectForm .form > div {
-  margin-bottom: 3rem;
-  border-radius: 12px;
-}
-.ProjectForm .form .BugStatus {
-  box-shadow: 0px 0px 12px rgb(0 0 0 / 5%), 4px 36px 46px rgb(0 0 0 / 5%);
-}
-.ProjectForm .maincontent .maincontentbody h4 {
-  font-size: 18px;
-  color: #5b5858;
-  margin-bottom: 20px;
-}
-
-.ProjectForm .maincontent .maincontentbody .projectDetail > div {
-  background: #ffffff;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
-    4px 36px 46px rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
-}
-
-.ProjectForm .maincontent .maincontentbody .projectDetail .content {
-  width: 100%;
-  padding: 2rem 2rem;
-  height: 15rem;
-}
-
-.ProjectForm .maincontent .maincontentbody .projectDetail .content .logo {
-  height: 100px;
-  width: 100px;
-  overflow: hidden;
-}
-.ProjectForm .maincontent .maincontentbody .projectDetail .content .logo img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-.ProjectForm .maincontent .maincontentbody .projectDetail > div > * {
-  margin-bottom: 40px;
-}
-.ProjectForm
-  .maincontent
-  .maincontentbody
-  .projectDetail
-  > div
-  > *:nth-child(4) {
-  margin: 0;
-}
-.ProjectForm .maincontent .maincontentbody .projectDetail > div h5 {
-  font-weight: 400;
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-.ProjectForm .maincontent .maincontentbody .textarea {
-  background: #ffffff;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
-    4px 36px 46px rgba(0, 0, 0, 0.05);
-  width: 100%;
-  padding: 20px 15px;
-  color: #52575c;
-  font-weight: 400;
-  line-height: 1.6rem;
-  font-size: 14px;
-}
-
-.ProjectForm .maincontent .maincontentbody input,
-.ProjectForm .maincontent .maincontentbody textarea {
-  background: #ffffff;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
-    4px 36px 46px rgba(0, 0, 0, 0.05);
-  width: 100%;
-  outline: none;
-  border-radius: 8px;
-  border: none;
-  font-size: 14px;
-  padding: 15px 15px;
-}
-
-.ProjectForm .maincontent .maincontentbody button {
-  padding: 10px 20px;
-  color: white;
-  border-radius: 0px 14px 14px 14px;
-  box-shadow: 0px 12px 24px rgba(98, 60, 231, 0.5);
-  font-weight: 600;
-}
-.ProjectForm .maincontent .maincontentbody button.draft {
-  border: 2px solid #623ce6;
-  color: #623ce6;
-}
-
-.ProjectForm .maincontent .maincontentbody button.Preview {
-  background: rgba(98, 60, 231, 0.6);
-}
-
-.ProjectForm .maincontent .maincontentbody button.Save {
-  background: #336cfb;
-}
-
-.ProjectForm .target {
-  margin-bottom: 3rem;
-}
-
-.ProjectForm h4 {
-  font-size: 18px;
-  color: #5b5858;
-}
-.ProjectForm .target select {
-  background: #ffffff;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
-    4px 36px 46px rgba(0, 0, 0, 0.05);
-  width: 100%;
-  outline: none;
-  border-radius: 6px;
-  border: none;
-  padding: 15px 10px;
-}
-.ProjectForm .target button {
-  background: #336cfb;
-  border-radius: 0px 4px 4px 4px !;
-}
-.ProjectForm .rewardscontainer {
-  background: #ffffff;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
-    4px 36px 46px rgba(0, 0, 0, 0.05);
-}
-.ProjectForm .rewardscontainer .box {
-  padding: 5px 15px;
-  text-align: center;
-  width: 145.83px;
-  border-radius: 7px 0px 7px 7px;
-  color: #ffffff;
-}
-.ProjectForm .rewardscontainer .box.Critical {
-  background-color: #f66262;
-}
-.ProjectForm .rewardscontainer .box.High {
-  background-color: #f78888;
-}
-.ProjectForm .rewardscontainer .box.Moderate {
-  background-color: #f5ad40;
-}
-.ProjectForm .rewardscontainer .box.Low {
-  background-color: #47bb60;
-}
-.ProjectForm .rewardscontainer .rewardrange input {
-  outline: none;
-  font-size: 12px;
-  padding: 5px;
-  border: 2px solid #e9e9e9;
-  height: 30px;
-  border-radius: 7px 0px 7px 7px;
-}
-.ProjectForm .rewardscontainer .rewardrange input.Critical {
-  border-color: #f66262;
-}
-.ProjectForm .rewardscontainer .rewardrange input.High {
-  border-color: #f78888;
-}
-.ProjectForm .rewardscontainer .rewardrange input.Moderate {
-  border-color: #f5ad40;
-}
-.ProjectForm .rewardscontainer .rewardrange input.Low {
-  border-color: #47bb60;
-}
-
-.ProjectForm .Hackercontainer {
-  background: #ffffff;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
-    4px 36px 46px rgba(0, 0, 0, 0.05);
-}
-.ProjectForm .Hackerlist .button button {
-  padding: 5px 15px;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
-    4px 36px 46px rgba(0, 0, 0, 0.05);
-  border-radius: 0px 7px 7px 7px;
-  font-size: 14px;
-}
-
-.ProjectForm .rightcontent .Hackerlist .button button.cancel {
-  border: 2px solid #47bb60;
-  color: #47bb60;
-}
-.ProjectForm .rightcontent .Hackerlist .button button.Invite {
-  background: #47bb60;
-  color: white;
-  font-weight: 600;
-}
-
-.ProjectForm .rightcontent .Hackercontainer .userlist .list {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-.ProjectForm .rightcontent .Hackercontainer .userlist .list:last-child {
-  margin-bottom: 0px;
-}
-.ProjectForm .rightcontent .Hackercontainer .userlist .list .icon {
-  height: 10px;
-  background-color: var(--clr-primary);
-  width: 10px;
-}
-.ProjectForm .rightcontent .Hackercontainer .userlist .list .delete {
-  margin-left: auto;
-  color: #f8896b;
-} */
+/* project form  starts*/
 
 .ProjectForm .maincontentbody h4 {
   margin-bottom: 2rem;
@@ -899,36 +695,36 @@ Main dashboard finished */
   font-size: 20px;
   margin-bottom: 10px;
 }
-.ProjectForm .maincontentbody .tablewrapper {
+.maincontentbody .tablewrapper {
   height: 30rem;
   overflow-y: auto;
   width: 100%;
 }
-.ProjectForm .maincontentbody .tablewrapper .table > tr:first-child {
+.maincontentbody .tablewrapper .table > tr:first-child {
   position: sticky;
   top: 0px;
 }
 
-.ProjectForm .maincontentbody .table {
+.maincontentbody .table {
   position: relative;
   background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
-.ProjectForm .maincontentbody .table tr td {
+.maincontentbody .table tr td {
   padding: 30px !important;
   color: #9f9fbb;
 }
-.ProjectForm .maincontentbody .table tr td:nth-child(3) {
+.maincontentbody .table tr td:nth-child(3) {
   color: #9f9fbb !important;
 }
-.ProjectForm .maincontentbody .table tr:first-child {
+.maincontentbody .table tr:first-child {
   position: sticky;
   top: 0;
   background: #adc4fd;
 }
-.ProjectForm .maincontentbody .table tr:first-child td {
+.maincontentbody .table tr:first-child td {
   color: #2d2b2b !important;
 }
 .modelcontainer,
@@ -998,13 +794,32 @@ Main dashboard finished */
 /* 
 project form ends */
 
+/* 
+UserSetup Form Starts */
+
+.usersetup .maincontentbody .card {
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
+    4px 36px 46px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.usersetup .maincontentbody label {
+  margin-bottom: 10px;
+}
+.usersetup .maincontentbody select {
+  padding: 0.375rem 0.75rem;
+  outline: none;
+  background-color: transparent;
+  border: 1.5px solid rgba(91, 88, 88, 0.5);
+  color: #5b5858;
+}
+/* 
+UserSetup Form end */
+
 /* projectlistview :start */
 
-.projectlist,
-.ProjectForm,
-.MasterDataEntry {
-  width: calc(100vw - 10vh) !important;
-}
 .projectlist .profile,
 .ProjectForm .profile,
 .MasterDataEntry .profile {
@@ -1028,10 +843,10 @@ project form ends */
   background: #f9f9f9;
 }
 .maincontent .maincontentbody .search {
-  box-shadow: 4px 36px 46px rgba(0, 0, 0, 0.05);
-  padding: 20px 20px;
+  border: 1.5px solid rgba(91, 88, 88, 0.5);
+  padding: 15px 15px;
   border-radius: 6px;
-  width: 20%;
+  width: 15%;
 }
 
 .maincontent .maincontentbody .search input {
@@ -1040,27 +855,6 @@ project form ends */
   outline: none;
   width: 100%;
   font-size: 14px;
-}
-
-.maincontent .maincontentbody .table tr td,
-.maincontent .maincontentbody .table tr th {
-  border: none !important;
-  vertical-align: middle;
-  height: 100%;
-  padding: 20px;
-}
-
-.maincontent .maincontentbody .table tr td .image img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-.maincontent .maincontentbody .table tr td:nth-child(3) {
-  color: #bf2900;
-}
-
-.maincontent .maincontentbody .table tr td:nth-child(4) {
-  color: #388f1a;
 }
 
 .maincontent .maincontentbody .table tr td .icon .fa-eye {
