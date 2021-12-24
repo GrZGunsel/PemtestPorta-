@@ -33,7 +33,7 @@ section > div > * {
   transition: all 0.5s ease-in-out;
 }
 section > div > .active {
-  width: 30vh;
+  width: 15vh;
 }
 .sidebar {
   padding: 2rem;
@@ -42,7 +42,7 @@ section > div > .active {
   height: 100vh;
   background: #ffffff;
   box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.05);
-  width: 15vh;
+  width: 30vh;
 }
 
 .maincontent {
@@ -60,10 +60,10 @@ section > div > .active {
   height: 60px;
 }
 .sidebar .Sidebarlinks a p {
-  display: none;
+  display: block;
 }
 .sidebar .Sidebarlinks .active a p {
-  display: block;
+  display: none;
 }
 .sidebar .Sidebarlinks a {
   display: flex;
@@ -699,22 +699,22 @@ Main dashboard finished */
   height: 30rem;
   overflow-y: auto;
   width: 100%;
-}
-.maincontentbody .tablewrapper .table > tr:first-child {
-  position: sticky;
-  top: 0px;
+  margin-bottom: 2rem;
 }
 
 .maincontentbody .table {
   position: relative;
   background: #ffffff;
-  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
 .maincontentbody .table tr td {
-  padding: 30px !important;
+  padding: 15px;
+  vertical-align: middle;
   color: #9f9fbb;
+}
+.maincontent .table tr th {
+  padding: 15px;
+  color: #ffffff;
 }
 .maincontentbody .table tr td:nth-child(3) {
   color: #9f9fbb !important;
@@ -722,10 +722,10 @@ Main dashboard finished */
 .maincontentbody .table tr:first-child {
   position: sticky;
   top: 0;
-  background: #adc4fd;
+  background: #004374;
 }
 .maincontentbody .table tr:first-child td {
-  color: #2d2b2b !important;
+  color: #ffffff !important;
 }
 .modelcontainer,
 .modelcontainer1 {
@@ -795,6 +795,59 @@ Main dashboard finished */
 project form ends */
 
 /* 
+Login screen */
+
+section {
+  height: 100vh;
+  width: 100%;
+  background: #fbfaf9;
+}
+
+.loginpannel {
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0px 3.86026px 11.5808px rgba(0, 0, 0, 0.05);
+  width: 30rem;
+  border-radius: 6px;
+}
+.logincontainer {
+  height: 100%;
+}
+.logincontainer h3 {
+  margin-bottom: 2rem;
+}
+.logincontainer .form-group {
+  margin-bottom: 20px;
+}
+.logincontainer .form-group label {
+  margin-bottom: 10px;
+}
+.logincontainer .form-group .form-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.logincontainer .form-group input {
+  background-color: transparent;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+.logincontainer .form-group i {
+  color: rgb(122, 122, 122);
+}
+
+.logincontainer form a {
+  text-decoration: none;
+}
+.logincontainer .button .primarybtn {
+  border-radius: 6px;
+  width: 100%;
+}
+/* 
 UserSetup Form Starts */
 
 .usersetup .maincontentbody .card {
@@ -818,6 +871,20 @@ UserSetup Form Starts */
 /* 
 UserSetup Form end */
 
+/* 
+Role Setup form */
+
+.RoleSetup .maincontentbody .card {
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
+    4px 36px 46px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+}
+.RoleSetup .maincontentbody label {
+  margin-bottom: 10px;
+}
+
 /* projectlistview :start */
 
 .projectlist .profile,
@@ -836,7 +903,6 @@ UserSetup Form end */
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
     4px 36px 46px rgba(0, 0, 0, 0.05);
   padding: 20px;
-  border-radius: 6px;
 }
 
 .maincontent .maincontentbody .table tr:nth-child(even) {
