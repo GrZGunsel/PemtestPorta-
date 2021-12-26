@@ -763,7 +763,7 @@ Main dashboard finished */
 .maincontentbody .table tr:first-child {
   position: sticky;
   top: 0;
-  background: #004374;
+  background: #336efb;
 }
 .maincontentbody .table tr:first-child td {
   color: #ffffff !important;
