@@ -127,7 +127,7 @@
                   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
                 </svg>
 
-                <p>Program</p>
+                <p>Project</p>
               </a>
               <a href="">
                 <svg
@@ -245,6 +245,7 @@
                 >
                   <div class="nameDescription">
                     <h4>Lorem Ispum</h4>
+                    <p>Joined a month ago</p>
                   </div>
                   <div
                     class="icons d-flex align-items-center"
@@ -252,6 +253,11 @@
                   >
                     <i class="far fa-bell"></i>
                   </div>
+                </div>
+                <div class="userDropdown">
+                  <a href=""><p>profile</p> </a>
+                  <a href=""><p>Change Password</p></a>
+                  <a href=""><p>Logout</p></a>
                 </div>
               </div>
             </div>
@@ -433,6 +439,28 @@ eSewa is a digital wallet based in Nepal providing instant online payment soluti
         var modelcontainer = document.querySelector(".modelcontainer");
         modelcontainer.style.display = "none";
       }
+      const optionMenu = () => {
+        const btn = document.querySelector(".profile");
+        const popup = document.querySelector(".userDropdown");
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          popup.classList.toggle("active");
+        });
+      };
+      optionMenu();
+
+      const removeDrpopdown = () => {
+        const body = document.body;
+        const popup = document.querySelector(".userDropdown");
+        body.addEventListener("click", function (e) {
+          if (popup.classList.contains("active")) {
+            console.log("Sad");
+            popup.classList.remove("active");
+            console.log(popup.classList);
+          }
+        });
+      };
+      removeDrpopdown();
 
       function extendedsidebar() {
         var text = document.querySelector(".link");

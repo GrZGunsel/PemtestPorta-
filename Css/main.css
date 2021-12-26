@@ -50,6 +50,7 @@ section > div > .active {
 }
 .sidebar .logo {
   margin-bottom: 5rem;
+  height: 30px;
 }
 
 .sidebar .Sidebarlinks {
@@ -160,6 +161,7 @@ section > div > .active {
 
 .profile .rightcontainer {
   width: 100%;
+  gap: 5px;
 }
 .profile .rightcontainer .nameDescription h4 {
   font-size: 16px;
@@ -189,7 +191,7 @@ section > div > .active {
   z-index: 99999;
   top: 0;
   background-color: white;
-
+  margin-bottom: 2rem;
   padding: 2rem 50px;
 }
 
@@ -894,6 +896,16 @@ UserSetup Form Starts */
 }
 /* 
 UserSetup Form end */
+
+/* inivite user starts */
+
+.inviteUser .maincontentbody .card {
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05),
+    4px 36px 46px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+}
 
 /* 
 Role Setup form */

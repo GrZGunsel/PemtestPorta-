@@ -33,26 +33,25 @@
               align-items-center
             "
           >
-            <h3>Add project Target</h3>
+            <h3>Add Role</h3>
             <button class="btn dangerbtn" onclick="removemodel()">x</button>
           </div>
           <div class="modelbody">
             <form action="">
               <div class="col-lg-12">
-                <div class="form-group d-flex flex-column">
-                  <label for="Website">Types</label>
-                  <select name="" id="Website">
-                    <option value="">sad</option>
-                    <option value="">sad</option>
-                    <option value="">sad</option>
-                    <option value="">sad</option>
-                  </select>
+                <div class="form-group">
+                  <label for="">Role</label>
+                  <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-lg-12">
                 <div class="form-group">
-                  <label for="">Target Url</label>
-                  <input type="text" class="form-control" />
+                  <label for="">Description </label>
+                  <textarea
+                    type="text"
+                    rows="4"
+                    class="form-control"
+                  ></textarea>
                 </div>
               </div>
             </form>
@@ -64,7 +63,7 @@
             >
               <div class="button">
                 <a href="">
-                  <button class="btn primarybtn add">Save</button>
+                  <button class="btn primarybtn add">Submit</button>
                 </a>
               </div>
 
@@ -260,7 +259,9 @@
             <div class="card Rolesetupcontainer mt-3">
               <div class="Rolesetupheader mb-3 d-flex justify-content-between">
                 <h5>Role Setup</h5>
-                <button class="btn primarybtn">Add Role</button>
+                <button class="btn primarybtn" onclick="model()">
+                  Add Role
+                </button>
               </div>
               <div class="Rolesetupbody">
                 <div class="searchcontainer mb-3 d-flex justify-content-end">
