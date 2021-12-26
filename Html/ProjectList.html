@@ -170,18 +170,6 @@
               </div>
             </div>
             <div class="options d-flex align-items-center">
-              <div class="security d-flex align-items-center">
-                <div class="icon">
-                  <img src="../Icons/ic_baseline-security.png" alt="" />
-                </div>
-                <p>Security Center</p>
-              </div>
-              <div class="setting d-flex align-items-center">
-                <div class="icon">
-                  <img src="../Icons/ant-design_setting-outlined.png" alt="" />
-                </div>
-                <p>Setting</p>
-              </div>
               <div class="profile d-flex align-items-center" style="gap: 10px">
                 <div class="leftcontainer">
                   <div class="image">
@@ -209,6 +197,11 @@
                   >
                     <i class="far fa-bell"></i>
                   </div>
+                </div>
+                <div class="userDropdown">
+                  <a href=""><p>profile</p> </a>
+                  <a href=""><p>Change Password</p></a>
+                  <a href=""><p>Logout</p></a>
                 </div>
               </div>
             </div>
@@ -316,6 +309,29 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      const optionMenu = () => {
+        const btn = document.querySelector(".profile");
+        const popup = document.querySelector(".userDropdown");
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          popup.classList.toggle("active");
+        });
+      };
+      optionMenu();
+
+      const removeDrpopdown = () => {
+        const body = document.body;
+        const popup = document.querySelector(".userDropdown");
+        body.addEventListener("click", function (e) {
+          if (popup.classList.contains("active")) {
+            console.log("Sad");
+            popup.classList.remove("active");
+            console.log(popup.classList);
+          }
+        });
+      };
+      removeDrpopdown();
+
       function extendedsidebar() {
         var text = document.querySelector(".link");
         var sidebar = document.querySelector(".sidebar");
