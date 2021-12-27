@@ -40,7 +40,7 @@ section > div > .active {
   position: sticky;
   top: 0px;
   height: 100vh;
-  background: #ffffff;
+
   box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.05);
   width: 30vh;
 }
@@ -736,6 +736,54 @@ Main dashboard finished */
   font-size: 20px;
   margin-bottom: 10px;
 }
+
+.ProjectForm .maincontentbody .projectDetail ul {
+  width: 300px;
+  flex-wrap: nowrap;
+  border: 2px solid #336cfb;
+  border-radius: 14px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.ProjectForm .maincontentbody .projectDetail ul .nav-item {
+  width: 100%;
+}
+
+.ProjectForm .maincontentbody .projectDetail ul .nav-item button {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  font-weight: 500;
+  border: none;
+}
+.ProjectForm .maincontentbody .projectDetail ul .nav-item button.active {
+  background-color: #336cfb;
+  color: white;
+}
+.ProjectForm .maincontentbody .projectDetail .form form .form-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.ProjectForm .maincontentbody .projectDetail .form form .form-header label {
+  margin: 0;
+}
+.ProjectForm .maincontentbody .projectDetail .form form .form-body label {
+  margin-bottom: 10px;
+}
+.ProjectForm .maincontentbody .projectDetail .form form .form-body button {
+  gap: 10px;
+  border-radius: 12px;
+}
+.ProjectForm .maincontentbody .projectDetail .form form select {
+  outline: none;
+  flex: 1;
+  padding: 0.375rem 0.75rem;
+  background-color: white;
+  border: 1px solid #5b5858;
+}
+
 .maincontentbody .tablewrapper {
   height: 30rem;
   overflow-y: auto;
@@ -1045,6 +1093,9 @@ Project list :end */
 .MasterDataEntry .maincontentheader {
   margin-bottom: 0;
 }
+/* 
+.MasterDataEntry end */
+
 @media all and (max-width: 1366px) {
   p {
     font-size: 12px !important;
