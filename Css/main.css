@@ -1005,9 +1005,9 @@ Role Setup form */
 }
 .maincontent .maincontentbody .search {
   border: 1.5px solid rgba(91, 88, 88, 0.5);
-  padding: 15px 15px;
+  padding: 10px 15px;
   border-radius: 6px;
-  width: 15%;
+  width: 20%;
 }
 
 .maincontent .maincontentbody .search input {
@@ -1016,6 +1016,9 @@ Role Setup form */
   outline: none;
   width: 100%;
   font-size: 14px;
+}
+.maincontent .maincontentbody .button {
+  flex-shrink: 0;
 }
 
 .maincontent .maincontentbody .table tr td .icon .fa-eye {
