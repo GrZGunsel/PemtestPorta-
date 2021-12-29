@@ -142,7 +142,8 @@
   .maincontent .maincontentbody .search {
     font-size: 14px;
   }
-  .MasterDataEntry .maincontentbody > h4 {
+  .MasterDataEntry .maincontentbody > h4,
+  .ProjectForm .maincontentbody h4 {
     font-size: 18px;
   }
   .MasterDataEntry .maincontentbody .fromcontainer h5 {
