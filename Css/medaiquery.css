@@ -9,6 +9,9 @@
 }
 
 @media all and (max-width: 1366px) {
+  .maincontent .maincontentbody .search {
+    width: 10rem;
+  }
   section {
     transition: all 0.5s ease-in-out;
   }
@@ -55,9 +58,19 @@
   .rightcontent .progressStatus .progresses h4 {
     font-size: 14px;
   }
+
+  .MasterDataEntry .fromcontainer {
+    padding: 2rem 1rem;
+  }
 }
 
 @media all and (max-width: 900px) {
+  .maincontent .maincontentheader {
+    padding: 2rem 20px;
+  }
+  .maincontent .maincontentbody {
+    padding: 0 20px;
+  }
   .sidebarcontainer .logo {
     height: 50px;
   }
@@ -99,5 +112,24 @@
   }
   .maincontentheader > div p {
     font-size: 10px !important;
+  }
+  .MasterDataEntry .form {
+    flex-direction: column;
+  }
+  .MasterDataEntry .card ul li button p {
+    font-size: 14px !important;
+  }
+  .maincontentbody .table tr td,
+  .maincontent .table tr th {
+    font-size: 14px;
+  }
+  .maincontent .maincontentbody .search {
+    font-size: 14px;
+  }
+  .MasterDataEntry .maincontentbody > h4 {
+    font-size: 18px;
+  }
+  .MasterDataEntry .maincontentbody .fromcontainer h5 {
+    font-size: 16px;
   }
 }
