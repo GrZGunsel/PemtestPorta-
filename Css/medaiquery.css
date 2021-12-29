@@ -65,6 +65,9 @@
 }
 
 @media all and (max-width: 900px) {
+  .homepage .maincontentheader {
+    margin: 0;
+  }
   .maincontent .maincontentheader {
     padding: 2rem 20px;
   }
