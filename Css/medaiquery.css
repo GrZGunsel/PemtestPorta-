@@ -71,7 +71,7 @@
   .maincontent .maincontentheader {
     padding: 2rem 20px;
   }
-  .homepage .maincontentbody {
+  .homepage.maincontent .maincontentbody {
     padding: 0 30px;
   }
   .maincontent .maincontentbody {
