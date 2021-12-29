@@ -71,8 +71,11 @@
   .maincontent .maincontentheader {
     padding: 2rem 20px;
   }
-  .maincontent .maincontentbody {
+  .homepage .maincontentbody {
     padding: 0 30px;
+  }
+  .maincontent .maincontentbody {
+    padding: 0 20px;
   }
   .sidebarcontainer .logo {
     height: 50px;
