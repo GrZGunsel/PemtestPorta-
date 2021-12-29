@@ -85,11 +85,12 @@
     position: fixed;
     top: 0;
     left: -100%;
+    padding: 3rem;
     z-index: 999999;
     background: white;
   }
   .sidebarcontainer.active {
-    width: 15rem;
+    width: 100%;
     left: 0;
   }
 
