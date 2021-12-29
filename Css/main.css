@@ -789,14 +789,13 @@ Main dashboard finished */
 }
 
 .maincontentbody .tablewrapper {
-  height: 30rem;
-  overflow-y: auto;
+  overflow-x: auto;
   width: 100%;
   margin-bottom: 2rem;
 }
 
 .maincontentbody .table {
-  overflow-y: auto;
+  overflow-x: auto;
 }
 .maincontentbody .table tr td {
   padding: 15px;
@@ -822,7 +821,7 @@ Main dashboard finished */
 .modelcontainer1 {
   display: none;
   background: rgba(35, 34, 34, 0.5);
-  position: absolute;
+  position: fixed;
   z-index: 9999999;
   align-items: center;
   justify-content: center;

@@ -148,4 +148,17 @@
   .MasterDataEntry .maincontentbody .fromcontainer h5 {
     font-size: 16px;
   }
+
+  .ProjectForm .maincontentbody > .row {
+    margin-bottom: 2rem;
+  }
+
+  .modelcontainer,
+  .modelcontainer1 {
+    padding: 20px;
+  }
+  .model,
+  .model1 {
+    width: 100%;
+  }
 }
