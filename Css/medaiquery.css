@@ -91,7 +91,7 @@
     background: white;
   }
   .sidebarcontainer.active {
-    width: 100%;
+    width: 15rem;
     left: 0;
   }
 
