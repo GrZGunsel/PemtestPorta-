@@ -81,7 +81,7 @@
     height: 50px;
   }
   .sidebarcontainer {
-    justify-content: flex-start !important;
+    align-items: flex-start !important;
     position: fixed;
     top: 0;
     left: -100%;
