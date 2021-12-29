@@ -1,0 +1,103 @@
+@media all and (max-width: 1440px) {
+  .rightcontent {
+    width: 30vw;
+    padding: 2rem 1rem;
+  }
+  .sidebarcontainer {
+    padding: 2rem 1rem;
+  }
+}
+
+@media all and (max-width: 1366px) {
+  section {
+    transition: all 0.5s ease-in-out;
+  }
+  .maincontent .maincontentheader {
+    padding: 2rem;
+  }
+  .maincontent .maincontentbody {
+    padding: 0 2rem;
+  }
+
+  .homepage .maincontentbody .row > * {
+    padding-right: calc(var(--bs-gutter-x) * 0.2);
+    padding-left: calc(var(--bs-gutter-x) * 0.2);
+  }
+  .homepage .maincontentbody .card {
+    padding: 20px;
+  }
+  .homepage .maincontentbody .cardbody h1 {
+    font-size: 20px;
+  }
+  .homepage .content .progress {
+    height: 50px;
+    width: 50px;
+  }
+  .content .weeksummary .cards .card {
+    height: 100%;
+    padding: 2rem 20px;
+  }
+  .homepage .content .progress .icon {
+    font-size: 14px;
+    margin: 0;
+  }
+  .rightcontent .overview .container h4 {
+    font-size: 25px;
+  }
+  .content .weeksummary .cards .card h5 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .content .weeksummary .cards .card p {
+    font-size: 16px !important;
+  }
+  .rightcontent .vulnerabilities h4,
+  .rightcontent .progressStatus .progresses h4 {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .sidebarcontainer .logo {
+    height: 50px;
+  }
+  .sidebarcontainer {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 999999;
+    background: white;
+  }
+  .sidebarcontainer.active {
+    width: 15rem;
+    left: 0;
+  }
+
+  .sidebarcontainer.active .Sidebarlinks a p {
+    display: block;
+  }
+  .sidebar.active {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    z-index: 999991;
+    background-color: rgba(0, 0, 0, 0.24);
+  }
+  .rightcontent {
+    width: 100%;
+    padding: 2rem 20px;
+    height: 100%;
+  }
+  section > div {
+    flex-direction: column;
+  }
+  .maincontentheader > div {
+    gap: 10px;
+  }
+  .maincontentheader .options {
+    gap: 10px;
+  }
+  .maincontentheader > div p {
+    font-size: 10px !important;
+  }
+}

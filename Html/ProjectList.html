@@ -326,8 +326,8 @@
         const body = document.body;
         const popup = document.querySelector(".userDropdown");
         body.addEventListener("click", function (e) {
+          if (event.target.closest(".userDropdown")) return;
           if (popup.classList.contains("active")) {
-            console.log("Sad");
             popup.classList.remove("active");
             console.log(popup.classList);
           }

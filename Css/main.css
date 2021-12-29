@@ -32,48 +32,55 @@ h5 {
 section > div > * {
   transition: all 0.5s ease-in-out;
 }
-section > div > .active {
-  width: 15vh;
+
+.sidebarcontainer.active {
+  width: 10vw;
 }
-.sidebar {
+
+.sidebarcontainer {
   padding: 2rem;
   position: sticky;
   top: 0px;
   height: 100vh;
-
+  transition: all 0.5s ease-in-out;
   box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.05);
-  width: 30vh;
+  width: 13vw;
 }
 
 .maincontent {
   width: 100%;
 }
-.sidebar .logo {
+.sidebarcontainer .logo {
   margin-bottom: 5rem;
-  height: 30px;
+  transition: all 0.5s ease-in-out;
+  height: 50px;
+}
+.sidebarcontainer.active .logo {
+  margin-bottom: 5rem;
+  height: 40px;
 }
 
-.sidebar .Sidebarlinks {
+.sidebarcontainer .Sidebarlinks {
   margin-bottom: auto;
 }
-.sidebar .add {
+.sidebarcontainer .add {
   width: 60px;
   height: 60px;
 }
-.sidebar .Sidebarlinks a p {
-  display: block;
+.sidebarcontainer .Sidebarlinks a p {
+  animation: sidebarlinks 1s ease-in;
 }
-.sidebar .Sidebarlinks .active a p {
+.sidebarcontainer.active .Sidebarlinks a p {
   display: none;
 }
-.sidebar .Sidebarlinks a {
+.sidebarcontainer .Sidebarlinks a {
   display: flex;
   align-items: center;
   gap: 5px;
   color: var(--clr-secondary-text);
   text-decoration: none;
 }
-.sidebar .add .addbtn {
+.sidebarcontainer .add .addbtn {
   background: var(--clr-primary);
   height: 100%;
   width: 100%;
@@ -82,22 +89,22 @@ section > div > .active {
   border-radius: 0px 14px 14px 14px;
   font-size: 24px;
 }
-.sidebar .Sidebarlinks .link {
+.sidebarcontainer .Sidebarlinks .link {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.sidebar .Sidebarlinks a.active {
+.sidebarcontainer .Sidebarlinks a.active {
   color: #336cfb !important;
 }
-.sidebar .Sidebarlinks .link .icon {
+.sidebarcontainer .Sidebarlinks .link .icon {
   color: var(--clr-secondary-text);
 }
-.sidebar .Sidebarlinks .link .icon svg {
+.sidebarcontainer .Sidebarlinks .link .icon svg {
   height: 26px;
   width: 26px;
 }
-.sidebar .Sidebarlinks a:hover {
+.sidebarcontainer .Sidebarlinks a:hover {
   color: #336cfb !important;
 }
 .rightcontent {
@@ -106,7 +113,6 @@ section > div > .active {
   height: 100vh;
   background: #ffffff;
   box-shadow: -3px 0px 8px rgba(0, 0, 0, 0.05);
-  width: 100%vh;
 }
 
 .profile {
@@ -227,10 +233,6 @@ section > div > .active {
 
 /* Main Dashboard starts */
 
-.homepage {
-  width: calc(100vw-55vw);
-}
-
 .homepage .maincontentheader {
   margin-bottom: 4rem;
 }
@@ -248,6 +250,7 @@ section > div > .active {
   border-radius: 12px;
 }
 .homepage .maincontentbody .card {
+  padding: 2rem;
   width: 100%;
   height: 100%;
   background: #ffffff;
@@ -268,7 +271,7 @@ section > div > .active {
   background-color: #6cd032;
   height: 100%;
 }
-.homepage .maincontentbody .cards {
+.homepage .maincontentbody > .cards {
   margin-bottom: 5rem;
 }
 .homepage .maincontentbody .card .menu {
@@ -1103,5 +1106,26 @@ Project list :end */
   .Approved,
   .inProgress {
     font-size: 12px !important;
+  }
+}
+
+@keyframes sidebarlinks {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
   }
 }
