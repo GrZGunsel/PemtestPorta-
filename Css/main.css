@@ -1111,6 +1111,76 @@ Project list :end */
 /* 
 .MasterDataEntry end */
 
+/* 
+ProfileDetail start */
+
+.profileDetail {
+  position: absolute;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #00000060;
+  width: 100%;
+  padding: 40px;
+}
+.profileDetail .profileContainer {
+  background: white;
+  height: 100%;
+  width: 60vw;
+  padding: 2rem;
+}
+.profileDetail .profileContainer .profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.profileDetail .profileContainer .profileHeader .image {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileDetail .profileContainer .profileHeader .rightcontainer p {
+  margin-bottom: 5px;
+}
+.profileDetail .profileContainer .profileBody .informationHeader .icon svg {
+  height: 24px;
+  width: 24px;
+  fill: #5b5858;
+}
+.profileDetail .profileContainer .profileBody .information {
+  margin-bottom: 2rem;
+}
+.profileDetail .profileContainer .profileBody .informationHeader {
+  border-bottom: 1px solid #0004;
+  padding-bottom: 10px;
+}
+.profileDetail .profileContainer .profileBody .informationHeader h6 {
+  margin: 0px;
+}
+.profileDetail .profileContainer .profileBody .informationBody .leftcontainer {
+  width: 12rem;
+}
+.profileDetail
+  .profileContainer
+  .profileBody
+  .informationBody
+  .rightcontainer
+  > div {
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.profileDetail
+  .profileContainer
+  .profileBody
+  .informationBody
+  .rightcontainer
+  svg {
+  height: 16px;
+  width: 16px;
+}
+
 @media all and (max-width: 1366px) {
   p {
     font-size: 12px !important;

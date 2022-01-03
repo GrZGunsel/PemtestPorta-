@@ -453,19 +453,23 @@
       function model() {
         var modelcontainer = document.querySelector(".modelcontainer");
         modelcontainer.style.display = "flex";
+        document.body.style.overflow = "hidden";
       }
 
       function deletecontainer() {
         var modelcontainer1 = document.querySelector(".modelcontainer1");
         modelcontainer1.style.display = "flex";
+        document.body.style.overflow = "hidden";
       }
       function removedeletecontainer() {
         var modelcontainer1 = document.querySelector(".modelcontainer1");
         modelcontainer1.style.display = "none";
+        document.body.style.overflow = "hidden";
       }
       function removemodel() {
         var modelcontainer = document.querySelector(".modelcontainer");
         modelcontainer.style.display = "none";
+        document.body.style.overflow = "hidden";
       }
 
       const extendedsidebar = () => {

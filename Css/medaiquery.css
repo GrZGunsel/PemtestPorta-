@@ -62,6 +62,9 @@
   .MasterDataEntry .fromcontainer {
     padding: 2rem 1rem;
   }
+  .profileDetail .profileContainer {
+    width: 80vw;
+  }
 }
 
 @media all and (max-width: 900px) {
@@ -165,5 +168,39 @@
   .model,
   .model1 {
     width: 100%;
+  }
+  .profileDetail .profileContainer {
+    width: 100%;
+  }
+  .profileDetail {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .profileDetail .profileContainer .profileHeader .image {
+    height: 10rem;
+    width: 10rem;
+  }
+  .profileDetail
+    .profileContainer
+    .profileBody
+    .informationBody
+    .leftcontainer {
+    width: 100%;
+  }
+  .profileDetail
+    .profileContainer
+    .profileBody
+    .informationBody
+    .rightcontainer {
+    padding-left: 10px;
+  }
+  .information .informationBody,
+  .information .informationBody .list,
+  .profileDetail .profileContainer .profileHeader {
+    gap: 20px !important;
+    flex-direction: column;
+    align-items: flex-start !important;
   }
 }
