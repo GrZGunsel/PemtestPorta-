@@ -906,6 +906,7 @@ Login screen */
 .logincontainer .form-group label {
   color: rgb(90, 90, 90);
   margin-bottom: 10px;
+  font-size: 14px;
 }
 .logincontainer .form-group .form-control {
   display: flex;
